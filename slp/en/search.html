@@ -1,0 +1,415 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Smart Library - Advance Search</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="../assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="../assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="../assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="landing">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+            <header id="header">
+                <h1 id="logo">
+                <span class="smlogo"><a href="index.html"><img src="../images/sl_logo.png" alt="Smart Library" title="Smart Library" /></a></span>
+                <a href="index.html"><img src="../images/mcycd_logo.png" alt="Ministry of Culture Youth & Community Development" title="Ministry of Culture Youth & Community Development" /></a>
+                </h1>
+			<!-- Right Nav-->
+				<div id="rightnav">
+				<a href="search.html" class="rselect">English</a> | <a href="../ar/search.html" class="arabic">عربي</a>
+				</div>
+				
+				
+				<!--NAV-->
+				<nav id="nav">
+					<ul>
+						<li><a class="active" href="index.html">Search</a></li>
+						<li><a href="news_updates.html">News & Updates</a></li>
+						<li><a href="publications.html">Publications</a></li>
+                        <li><a href="browse_library.html">Browse Library</a></li>
+						<li><a href="resources.html">Resources</a></li>
+                        <li><a href="aboutus.html">About Us</a></li>
+						<li><a href="https://mcycd.gov.ae/sites/mcycdvar/en-us/pages/Contactus.aspx">Contact Us</a></li>
+					</ul>
+				</nav>
+            </header>
+			
+            <!-- Banner -->
+            <section id="banner" class="search_banner">
+					<div class="content">
+						<img src="../images/slw_logo.png" title="Smart Library" alt="Smart Library" />
+                        <div class="row 0%">
+                            <div class="6u 12u$(xsmall)">
+                            <div class="right">
+                            <input class="button rose basic_search search_select" type="button" value="Basic Search" />
+                            </div>
+                            </div>
+                            <div class="6u 12u$(xsmall)">
+                            <div class="left">
+                            <input class="button rose adv_search" type="button" value="Advance Search" />
+                            </div>
+                            </div>
+                        </div>
+                        <div class="row 50%">
+                            <div class="11u 12u$(xsmall)">
+                                <label>Search For</label>
+                                <div class="search_input_icon">
+                                <select class="drop_icon">
+                                    <option value="Anywhere" selected="selected">Anywhere</option>
+                                    <option value="Title">Title</option>
+                                    <option value="Author">Author</option>
+                                    <option value="Subject">Subject</option>
+                                    <option value="ISBN">ISBN</option>
+                                </select>
+                                <input class="search_input_text"  type="text" placeholder="Search print books, e-books, articles and more"></div>
+                                <div class="adv_srch">
+                                    <div class="align-right">
+                                    <select class="drop_icon di_small" name="Journals">
+                                        <option value="AND" data-html-text="AND">And</option>
+                                        <option value="OR" data-html-text="OR">OR</option>
+                                        <option value="NOT" data-html-text="NOT">NOT</option>
+                                    </select>
+                                    </div>
+                                    <div class="search_input_icon">
+                                    <select class="drop_icon">
+                                        <option value="Anywhere" selected="selected">Anywhere</option>
+                                        <option value="Title">Title</option>
+                                        <option value="Author" selected="selected">Author</option>
+                                        <option value="Subject">Subject</option>
+                                        <option value="ISBN">ISBN</option>
+                                    </select>
+                                    <input class="search_input_text"  type="text" placeholder="Search print books, e-books, articles and more"></div>
+                                    <label>Search Database</label>
+                                    <div class="extend_box">
+                                        <input type="checkbox" checked="" id="ProQuest" name="ProQuest Central"><label for="ProQuest">ProQuest Central</label>
+                                        <input type="checkbox" id="eBray" name="eBray eBook Collection"><label for="eBray">eBray eBook Collection</label>
+                                        <input type="checkbox" checked="" id="MCKDL" name="MCKD Libraries"><label for="MCKDL">MCKD Libraries</label>
+                                        <input type="checkbox" checked="" id="MCKDP" name="MCKD Publications"><label for="MCKDP">MCKD Publications</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="1u 12u$(xsmall)">
+                                <label class="align-center">Go</label>
+                                <input type="button" class="go" onclick="location.href='#searchresult';">
+                            </div>
+                    </div>
+                    </div>
+				</section>
+                
+			<!-- Main -->
+            <div id="main" class="wrapper">
+                <div class="container">
+                    <!--Search Count-->
+                    <a name="searchresult" id="searchresult"></a>
+                    <div class="search_count">
+                    Found <b>2096</b> results for <b>“Art”</b> with  Advanced Search options
+                    </div>
+                    
+                    <div class="row 50%">
+                        <div class="4u 12u$(small)">
+                        <!-- Sidebar -->
+                            <section id="sidebar">
+                                <section class="sidebar">
+                                    <h3 class="FilterTitle">Database</h3>
+                                    <ul>
+                                    <li>ebrary eBook Collections<span class="filter_no">12345</span></li>
+                                    <li>ProQuest Central<span class="filter_no">123</span></li>
+                                    <li>MCKD Libraries<span class="filter_no">67</span></li>
+                                    </ul>
+                                    
+                                    <h3 class="FilterTitle">Subject</h3>
+                                    <ul>
+                                    <li>Electronic books<span class="filter_no">12345</span></li>
+                                    <li>Electronic Journals<span class="filter_no">123</span></li>
+                                    <li>Art<span class="filter_no">67</span></li>
+                                    <li>Military art and science<span class="filter_no">12345</span></li>
+                                    <li>Art<span class="filter_no">123</span></li>
+                                    <li>United States<span class="filter_no">12345</span></li>
+                                    <li>ﺪﻳﺰﻤﻟﺍ<span class="filter_no">123</span></li>
+                                    <li>Art, Modern<span class="filter_no">67</span></li>
+                                    <li>United States<span class="filter_no">12345</span></li>
+                                    </ul>
+                                    
+                                    <h3 class="FilterTitle">Author</h3>
+                                    <ul>
+                                    <li>ﺪﻳﺰﻤﻟﺍ<span class="filter_no">12345</span></li>
+                                    <li>Brown, Dan,<span class="filter_no">123</span></li>
+                                    <li>Cohen, Willian A.,<span class="filter_no">67</span></li>
+                                    <li>Finkelstein, Sydney, Walt...<span class="filter_no">12345</span></li>
+                                    <li>Hauser, Arnold<span class="filter_no">123</span></li>
+                                    <li>ﺪﻳﺰﻤﻟﺍ<span class="filter_no">67</span></li>
+                                    <li>Adler, Dennis<span class="filter_no">12345</span></li>
+                                    <li>Adler, Stella.<span class="filter_no">123</span></li>
+                                    <li>Ahearn, Luke.<span class="filter_no">67</span></li>
+                                    <li>Baramki, Dimitri Constantine,<span class="filter_no">67</span></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </div>
+                        <div class="8u$ 12u$(small)">
+                            <!-- Content -->
+                            <section class="search_content">
+                                <!--Search Panel-->
+                                <div class="sort_panel">
+                                    <div class="row 50%">
+                                        <div class="3u  6u 12u$(xsmall)">
+                                            <div class="sortby">
+                                            Sort by
+                                            <select>
+                                                <option>relevance</option>
+                                                <option>author</option>
+                                                <option>subject</option>
+                                                <option>latest</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="6u  6u 12u$(xsmall)">
+                                        <div class="sortnumber">
+                                            <a href="#" class="sort_panel_no">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#">6</a>
+                                            <a href="#">7</a>
+                                            <a href="#">8</a>
+                                            <a href="#">9</a>
+                                            <a href="#">10</a>
+                                            <a href="#">11</a>
+                                            <a href="#">12</a>...
+                                            <a href="#">Next</a>
+                                        </div>
+                                        </div>
+                                        <div class="3u  6u 12u$(xsmall)">
+                                        <div class="sort_show" >
+                                        Show
+                                        <select>
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>30</option>
+                                            <option>40</option>
+                                        </select>
+                                        per page
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Table -->
+                                <section>
+                                    <div class="search-table">
+                                    <ol>
+                                        <li>
+                                            <h1>Art journal</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>    
+                                            <h1>Art education</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>    
+                                            <h1>Art education</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h1>Art journal</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>    
+                                            <h1>Art education</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>    
+                                            <h1>Art education</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <h1>Art journal</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>    
+                                            <h1>Art education</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                        <li>    
+                                            <h1>Art education</h1>
+                                            <div class="row">
+                                                <div class="2u 12u$(small)">Publication:</div>
+                                                <div class="10u 12u$(small)">New York: College Art Association of America, 1960</div>
+                                                
+                                                <div class="2u 12u$(small)">Issue Date:	</div>
+                                                <div class="10u 12u$(small)">Vol. 20, no. 1 (fall 1960)-</div>
+                                                
+                                                <div class="2u 12u$(small)">Source:</div>
+                                                <div class="10u 12u$(small)"><a href="#">ProQuest Central</a> & <a href="#">1 more</a></div>
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    </div>
+                                </section>
+                            
+                                <!--Search Panel-->
+                                <div class="sort_panel">
+                                    <div class="row 50%">
+                                        <div class="3u  6u 12u$(xsmall)">
+                                            <div class="sortby">
+                                            Sort by
+                                            <select>
+                                                <option>relevance</option>
+                                                <option>author</option>
+                                                <option>subject</option>
+                                                <option>latest</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="6u  6u 12u$(xsmall)">
+                                        <div class="sortnumber">
+                                            <a href="#" class="sort_panel_no">1</a>
+                                            <a href="#">2</a>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#">6</a>
+                                            <a href="#">7</a>
+                                            <a href="#">8</a>
+                                            <a href="#">9</a>
+                                            <a href="#">10</a>
+                                            <a href="#">11</a>
+                                            <a href="#">12</a>...
+                                            <a href="#">Next</a>
+                                        </div>
+                                        </div>
+                                        <div class="3u  6u 12u$(xsmall)">
+                                        <div class="sort_show" >
+                                        Show
+                                        <select>
+                                            <option>10</option>
+                                            <option>20</option>
+                                            <option>30</option>
+                                            <option>40</option>
+                                        </select>
+                                        per page
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<!-- Go Top-->
+            <a href="#" class="go-top"><i></i></a>
+            
+            <!-- Footer -->
+				<footer id="footer">
+                <div class="footer_top">
+					<ul class="footer_menu">
+						<li><a href="#">Contact Us</a></li> | 
+						<li><a href="#">Site Map</a></li> | 
+                        <li><a href="#">Terms & Conditions</a></li> | 
+                        <li><a href="#">Privacy Policy</a></li>
+					</ul>
+					<ul class="copyright">
+						<li>All rights are reserved for the Ministry of Culture , Youth & Community Development, United Arab Emirates &copy; 2016.</li>
+					</ul>
+                    <div class="social_media">
+                    Share this website on
+                    <div class="social">
+                      <a class="fa fa-twitter" title="Twitter" target="_blank" href="#"></a>
+                      <a class="fa fa-facebook" title="Facebook" target="_blank" href="#"></a>
+                      <a class="fa fa-rss" title="RSS" target="_blank" href="#"></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="footer_bottom"></div>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="../assets/js/jquery.min.js"></script>
+		<script src="../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../assets/js/skel.min.js"></script>
+		<script src="../assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="../assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="../assets/js/main.js"></script>
+	</body>
+</html>
